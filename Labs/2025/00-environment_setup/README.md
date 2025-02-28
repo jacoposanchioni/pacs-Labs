@@ -161,4 +161,6 @@ Then, it will be possible both to use the pacs-examples environment (default), o
 source /u/sw/etc/bash.bashrc
 ```
 
+### Extra: Set up Visual Studio Code
+see e.g.: [4. Set up Visual Studio Code](https://github.com/HPC-Courses/AMSC-Labs/tree/main/Labs/2023-24/lab00-setup)
 
