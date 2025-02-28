@@ -142,7 +142,7 @@ g++ -std=c++20 -Wall -I $mkEigenInc test.cpp  -o test && ./test && rm ./test
 ### mk modules only (linux)
 ```
 wget https://github.com/pcafrica/mk/releases/download/v2024.0/mk-2024.0-full.tar.gz
-sudo tar xvzf sudo tar xvzf mk-2024.0-full.tar.gz -C / -C /
+sudo tar xvzf mk-2024.0-full.tar.gz -C /
 rm mk-2024.0-full.tar.gz
 source /u/sw/etc/bash.bashrc
 module load gcc-glibc
