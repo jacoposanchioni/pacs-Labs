@@ -81,7 +81,8 @@ loads the requested module. This creates a set of environment variables storing 
 
 ### Apptainer example (linux)
 
-[Apptainer](https://apptainer.org/docs/user/main/quick_start.html) is a container platform aimed at High-Performance Computing cluster, where it is more commonly found, possibly as [singularity](https://en.wikipedia.org/wiki/Singularity_(software)). 
+[Apptainer](https://apptainer.org/docs/user/main/quick_start.html) is a container platform aimed at High-Performance Computing cluster, where it is more commonly found, possibly as [singularity](https://en.wikipedia.org/wiki/Singularity_(software)). To install apptainer you can refer to its documentation; for example, for Ubuntu (and WSL running it): 
+[https://apptainer.org/docs/admin/main/installation.html#install-ubuntu-packages](https://apptainer.org/docs/admin/main/installation.html#install-ubuntu-packages)
 
 ### create a directory for temporary files
 This step is useful to build large containers  
