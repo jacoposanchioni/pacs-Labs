@@ -138,3 +138,27 @@ module load gcc-glibc
 module load eigen
 g++ -std=c++20 -Wall -I $mkEigenInc test.cpp  -o test && ./test && rm ./test
 ```
+
+### mk modules only (linux)
+```
+wget https://github.com/pcafrica/mk/releases/download/v2024.0/mk-2024.0-full.tar.gz
+sudo tar xvzf sudo tar xvzf mk-2024.0-full.tar.gz -C / -C /
+rm mk-2024.0-full.tar.gz
+source /u/sw/etc/bash.bashrc
+module load gcc-glibc
+module load eigen
+g++ -std=c++20 -Wall -I $mkEigenInc test.cpp  -o test && ./test && rm ./test
+```
+
+### podman: pacs-examples container + mk modules
+It is either possible to start from the docker://lucaformaggia/pacs-examples:latest container, follow the Permanent changes example - installing nano and adapt it to the mk modules only (linux) example, or directly:
+```
+podman pull --arch=amd64 quay.io/pjbaioni/pacs-examples-with-mk:2024
+podman run -it --name pacs2025 --rm -v /path/to/shared_files_directory:/home/pacs/shared_files quay.io/pjbaioni/pacs-examples-with-mk:2024
+```
+Then, it will be possible both to use the pacs-examples environment (default), or to load the mk modules, starting from
+```
+source /u/sw/etc/bash.bashrc
+```
+
+
