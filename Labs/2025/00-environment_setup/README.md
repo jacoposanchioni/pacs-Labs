@@ -162,6 +162,23 @@ Then, it will be possible both to use the pacs-examples environment (default), o
 source /u/sw/etc/bash.bashrc
 ```
 
+### Remark
+If you use the podman (or docker) container, the pacs-Labs and pacs-examples repositories are already set up and ready to use.
+Otherwise, either you are using the mk modules natively or via apptainer, you should clone them and install the needed libraries, following the repos READMEs. In short:
+```
+git clone git@github.com:pacs-course/pacs-Labs
+git clone --recursive git@github.com:HPC-Courses/pacs-examples.git --branch master
+cd pacs-examples
+source load_modules.sh
+cd Extras
+./install_extras.sh
+cd ../Examples
+cp Makefile.user Makefile.inc
+pwd
+#modify PACS_ROOT to be pwd in Makefile.inc
+bash ./setup.sh
+```
+
 ### Extra: Set up Visual Studio Code
-see e.g.: [4. Set up Visual Studio Code](https://github.com/HPC-Courses/AMSC-Labs/tree/main/Labs/2023-24/lab00-setup)
+see e.g.: [4. Set up Visual Studio Code](https://github.com/HPC-Courses/AMSC-Labs/tree/main/Labs/2023-24/lab00-setup#4-set-up-visual-studio-code)
 
